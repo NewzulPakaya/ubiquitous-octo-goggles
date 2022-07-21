@@ -1,0 +1,287 @@
+.main_wl {
+    letter-spacing: 0.5px;
+}
+input, input:before, input:after {
+    -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+   }
+@media (max-width:400px)
+    {
+        .container {
+            width: 100%
+        }
+        .zapper {
+            display: none;
+        }
+        .logo {
+            margin-left: 20px;
+        }
+        nav {
+            display: none;
+        }
+        .mobile_brack {
+            display: block;
+        }
+        .desktop_brack {
+            display: none;
+        }
+        h1 {
+            margin-top: 100px;
+            margin-left: 20px;
+            font-size: 27px;
+        }
+        .index {
+            margin-left: 10px;
+color: #a160fe;
+font-size: 36px;
+font-weight: 600;
+color: -webkit-linear-gradient(315deg, #784ffe, #a160fe);
+color: linear-gradient(135deg, #784ffe, #a160fe);
+        }
+
+h3 {
+    display: none;
+}
+.main_flex {
+    display: flex;
+    flex-direction: column;
+}
+.main_form {
+    margin: 50px auto;
+    margin-left: auto;
+    margin-left: 20px;
+    width: 350px;
+    height: 54px;
+    color: black;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-size: 16px;
+    background-color: #f0f5f9;
+    border: 1px solid #dfe8f9;
+    letter-spacing: 0.2px;
+    flex-shrink: 0;
+}
+.main_or {
+    display: none;
+}
+.main_pink {
+    height: 54px;
+width: 350px;
+border-radius: 4px;
+background: linear-gradient(135deg, #784ffe, #a160fe);
+color: white;
+font-size: 15px;
+font-weight: bold;
+border: 0;
+margin-left: 20px;
+flex-shrink: 0;
+}
+
+
+
+
+.main_black {
+    height: 54px;
+width: 350px;
+border-radius: 4px;
+background-color: #002237;
+color: white;
+font-size: 15px;
+font-weight: bold;
+border: 0;
+margin-top: 20px;
+margin-left: 20px;
+}
+
+.main_what {
+    margin-top: 269px;
+}
+
+.main_what_two {
+    margin: 32px 0 45px 20px;
+}    
+.main_what_one {
+    margin-top: 275px;
+margin-left: 20px;
+}
+.main_flex_bottom {
+    height: 150px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+flex-direction: column;
+}
+
+.main_mbt {
+    height: 174px;
+width: 350px;
+background-color: #f0f5f9;
+border-radius: 4px;
+margin: 10px auto;
+text-align: center;
+margin-left: 20px;
+flex-shrink: 0;
+}
+.main_mbtpbot {
+    margin-bottom: 25px;
+}
+
+
+
+
+
+.modal:target {
+    overflow-y: auto;
+}
+.modal-header {
+    letter-spacing: 0.5px;
+    font-size: 17px;
+}
+.modal-title {
+    font-size: 16px !important;
+    display: block;
+}
+.modal-dialog {
+    width: 380px;
+    height: 800px;
+   margin-left: -1px;
+}
+.modal-content {
+    width: 360px;
+    height: 800px;
+margin: 0 auto;
+}
+
+.modal-body {
+    width: 380px;
+height: 800px;
+display: flex;
+flex-direction: column;
+}
+/* .modal-body_l {
+
+} */
+.modal-body_r {
+    height: 300px;
+width: 380px;
+margin-left: -4px;
+margin-top: 10px;
+
+}
+.panel {
+width: 360px;
+margin-left: -42px;
+margin-top: 25px;
+overflow: auto;
+}
+.accordion {
+    margin-top: 290px;
+}
+.close {
+    margin-top: -24px;
+}
+.inp_mod {
+    height: 160px;
+width: 290px;
+}
+#exMask {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exLedger {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exTrezor {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exPortis {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exOpera {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exBlockchain {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exExodus {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exWalletConnect {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exLattice {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exFormatic {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exTorus {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exWalletLink {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+#exTrust {
+    width: 350px;
+    margin: 20px auto;
+    margin-left: 15px;
+}
+.ex2icon {
+    margin: -5px auto;
+}
+
+footer {
+    display: none;
+}
+/* дашборд */
+.lk {
+    margin-left: 185px;
+}
+.subheader {
+    display: none;
+}
+.modal2 {
+    margin: -625px auto;
+}
+.total_acco {
+    margin-left: 20px;
+}
+.plat {
+    margin-left: 20px;
+}
+.total_block {
+    margin-left: 20px;
+}
+body {
+    overflow: auto;
+}
+}

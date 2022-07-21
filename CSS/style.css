@@ -1,0 +1,110 @@
+/* Кнопка выпадающего списка */
+.dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 65px;
+    background-color: white;
+    padding: 12px;
+}
+.dropbtn_lang {
+    position: absolute;
+    bottom: 17px;
+}
+.dropbtn_arrow {
+    height: 0px;
+    width: 0px;
+    border-top: 5px solid black;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    right: 20px;
+    bottom: 24px;
+}
+.dropbtn:hover {
+    background-color: #f0f5f9;
+    border-radius: 4px;
+
+
+}
+.dropbtn:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+
+  /* Кнопка выпадающего меню при наведении и фокусировке */
+/*   .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  } */
+  
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: -14px;
+  }
+  .dropdown:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+  }
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 2px 8px rgb(0 34 55 / 10%);
+    z-index: 1;
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content a:hover {background-color: #f0f5f9;
+}
+.main_flex form {
+    display: flex;
+}
+.main_or {
+    margin: 0 1%;
+}
+.dropdown-content a:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+  /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {display:block; margin-top: -451px;
+  height: 400px;
+  width: 216px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 4px;
+} 
+@media (max-width: 767px) {
+  .main_flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main_flex form {
+      display: flex;
+      flex-direction: column;
+  }
+  .container_main {
+      width: 100%;
+      margin: 0 auto;
+  }
+}

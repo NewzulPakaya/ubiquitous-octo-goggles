@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: local('Avenir Next Demi'), local('Avenir-Next-Demi'),
+        url('AvenirNextCyr-Demi.woff2') format('woff2'),
+        url('AvenirNextCyr-Demi.woff') format('woff'),
+        url('AvenirNextCyr-Demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

